@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+.bgimg {
+    background-image: url('file:///C:/Users/lmorales.INTERBC/Pictures/pizarra.png');
+    	height:500px;
+	width:950px ;
+}
+#demo {
+       color: white;
+       //border: 1px solid powderblue;
+       padding: 30px;
+       font-size: 50px;
+}
+#leo{
+
+}
+
+</style>
+
+<body>
+<div class="bgimg"><center>
+<p id="demo"></cente></p>
+
+<script>
+var result;
+var num1=Math.floor(Math.random() * 10);
+var num2=Math.floor(Math.random() * 10);
+var operador=Math.floor(Math.random() * 3);
+
+
+switch (operador) {
+    case 0:
+        result = num1 +" + "+ num2+ " = "+ Number(num1+ num2);
+        break;
+    case 1:
+        result = num1 +" - "+ num2+ " = "+ Number(num1- num2);
+        break;
+    case 2:
+        result = num1 +" X "+ num2+ " = "+ Number(num1* num2);
+        break;
+  
+}
+
+
+document.getElementById("demo").innerHTML = result + " : <input id=leo type=text name=fname>   <input type=submit value=Submit> ";
+</script>
+</div>
+</body>
+</html>
+
